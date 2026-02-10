@@ -27,3 +27,18 @@ git branch -d exp-resnet50
 
 #pulling changes in teams
 git pull
+
+#Create a venv
+cd 
+python3 -m venv ~/venv-name
+
+#Activating venv
+cd
+source ~/venv-name/bin/activate
+
+#Install jupyterkernel inside venv
+
+pip install ipykernel notebook
+python -m ipykernel install --user \
+  --name venv-name \
+  --display-name "Python (venv-name)"
